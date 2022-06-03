@@ -13,6 +13,7 @@ class Maruti implements DemoCar{
 		System.out.println("Maruti is good to speed");
 		
 	}
+@Component
 class Mahindra implements DemoCar{
 
 	@Override
@@ -33,8 +34,7 @@ public class Cars {
 		AnnotationConfigApplicationContext obj=new AnnotationConfigApplicationContext(Cars.class);
 		Maruti maruti=obj.getBean(Maruti.class);
 		maruti.speed();
-		
-		
+	    
 		
 	}
 
