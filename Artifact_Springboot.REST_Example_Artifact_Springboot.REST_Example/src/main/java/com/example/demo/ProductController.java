@@ -12,7 +12,7 @@ public class ProductController {
 	private IProductService productService;
 
 	//Mapping the getProduct
-	@GetMapping
+	@GetMapping("/Product")
 	public List<Product>getProduct(){
 	
 	List<Product>products=productService.findAll();
